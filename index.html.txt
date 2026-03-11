@@ -1,3 +1,7 @@
+<title>Cafe&Bar Adam and Eve | Ishigaki Island Bar</title>
+<meta name="description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。カクテル・泡盛・ウイスキーを楽しめる落ち着いたバー。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
