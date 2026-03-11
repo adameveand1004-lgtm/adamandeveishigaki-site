@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Cafe&Bar Adam and Eve | 石垣島 浜崎町のバー</title>
+<title>Cafe&Bar Adam and Eve 石垣島のバー | 浜崎町 カクテルバー</title>
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cafe&Bar Adam and Eve | Ishigaki Island Bar">
@@ -99,6 +99,7 @@ letter-spacing:12px;
 font-weight:200;
 margin:0;
 text-shadow:0 4px 20px rgba(0,0,0,0.8);
+word-break: keep-all;
 }
 
 .hero p{
@@ -212,12 +213,13 @@ padding:110px 20px;
  "@context": "https://schema.org",
  "@type": "BarOrPub",
  "name": "Cafe&Bar Adam and Eve",
- "image": "https://adamandeveishigaki-site.netlify.app/bar.jpg",
+
+"description": "石垣島浜崎町のカクテルバー Cafe&Bar Adam and Eve。石垣島で一人でも入りやすいバーとしてカクテル・泡盛・ウイスキーを楽しめます。石垣港離島ターミナルから徒歩10分。",
+"image": "https://adamandeveishigaki-site.netlify.app/bar.jpg",
  "url": "https://adamandeveishigaki-site.netlify.app",
  "telephone": "+81980875504",
-"priceRange": "¥3000-¥5000",
-"servesCuisine": "Bar",
-"menu": "https://drive.google.com/drive/mobile/folders/1zciMSLu1cRZzQ3MRFw8-6vcNF4K4whBn",
+ "priceRange": "¥3000-¥5000",
+ "servesCuisine": "Bar",
 
  "address": {
    "@type": "PostalAddress",
@@ -227,12 +229,62 @@ padding:110px 20px;
    "streetAddress": "浜崎町2丁目2-14 浅野アパート102号",
    "addressCountry": "JP"
  },
+
  "geo": {
    "@type": "GeoCoordinates",
    "latitude": "24.339",
    "longitude": "124.155"
  },
- "openingHours": "Mo,We,Th,Fr,Sa,Su 17:00-00:00",
+
+ "openingHoursSpecification": {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+     "Monday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+   ],
+   "opens": "17:00",
+   "closes": "00:00"
+ },
+
+ "hasOfferCatalog": {
+   "@type": "OfferCatalog",
+   "name": "Drinks Menu",
+   "itemListElement": [
+     {
+       "@type": "Offer",
+       "itemOffered": {
+         "@type": "Product",
+         "name": "カクテル"
+       }
+     },
+     {
+       "@type": "Offer",
+       "itemOffered": {
+         "@type": "Product",
+         "name": "泡盛"
+       }
+     },
+     {
+       "@type": "Offer",
+       "itemOffered": {
+         "@type": "Product",
+         "name": "ウイスキー"
+       }
+     },
+     {
+       "@type": "Offer",
+       "itemOffered": {
+         "@type": "Product",
+         "name": "ビール"
+       }
+     }
+   ]
+ },
+
  "sameAs": [
    "https://www.instagram.com/adam_and_eve_ishigaki",
    "https://www.tiktok.com/@adam_and_eve_ishigaki",
@@ -240,6 +292,47 @@ padding:110px 20px;
    "https://x.com/adam_and_eve102",
    "https://www.facebook.com/adamandeve1004",
    "https://www.threads.com/@adam_and_eve_ishigaki"
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "一人でも入りやすいバーですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "はい。Cafe&Bar Adam and Eveは一人でも入りやすい石垣島のバーです。カウンター席が中心で、観光のお客様や地元のお客様が気軽に立ち寄れる雰囲気です。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "石垣港離島ターミナルからどれくらいですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "石垣港離島ターミナルから徒歩約10分です。浜崎町にある小さな隠れ家バーです。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "どんなお酒がありますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "泡盛、ウイスキー、ビール、カクテルなど各種ドリンクをご用意しています。石垣島らしいカクテルも人気です。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "観光客でも入りやすいですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "はい。観光のお客様でも気軽に立ち寄れるバーです。一人旅の方やカップルのお客様にもご利用いただいています。"
+   }
+  }
  ]
 }
 </script>
@@ -264,9 +357,9 @@ padding:110px 20px;
 <div class="hero">
 
 <h1>Cafe&Bar Adam and Eve</h1>
-<p>石垣島 浜崎町のバー</p>
+<p>石垣島 浜崎町のカクテルバー</p>
 
-<p>A Quiet Night in Ishigaki</p>
+<p>A Quiet Bar Night in Ishigaki</p>
 
 </div>
 
@@ -282,7 +375,10 @@ padding:110px 20px;
 石垣島浜崎町にある小さなバー。
 石垣島で一人でも入りやすいバーとして、
 観光の方や地元の方にご利用いただいています。
-カクテルや泡盛を楽しめる隠れ家バーです。
+
+カクテル・泡盛・ウイスキーなどを楽しめる
+石垣島の隠れ家バーです。
+
 旅の途中でも、地元の方でも。  
 
 カウンターでゆっくりと  
@@ -300,10 +396,13 @@ padding:110px 20px;
 
 <div class="gallery">
 
-<img src="counter.jpg" alt="Cafe&Bar Adam and Eve カウンター席" loading="lazy">
-<img src="cocktail.jpg" alt="Cafe&Bar Adam and Eve カクテル" loading="lazy">
-<img src="bar.jpg" alt="Cafe&Bar Adam and Eve 店内" loading="lazy">
-<img src="inside.jpg" alt="Cafe&Bar Adam and Eve 内装" loading="lazy">
+<img src="counter.jpg" alt="石垣島バー Cafe&Bar Adam and Eve カウンター席" loading="lazy">
+
+<img src="cocktail.jpg" alt="石垣島 カクテルバー Cafe&Bar Adam and Eve カクテル" loading="lazy">
+
+<img src="bar.jpg" alt="石垣島 浜崎町 バー Cafe&Bar Adam and Eve 店内" loading="lazy">
+
+<img src="inside.jpg" alt="石垣島バー Cafe&Bar Adam and Eve 内装" loading="lazy">
 
 </div>
 
@@ -347,7 +446,7 @@ Open 17:00 – 0:00
 </p>
 
 <iframe
-src="https://www.google.com/maps?q=907-0013+沖縄県石垣市浜崎町2丁目2-14&output=embed"
+src="https://www.google.com/maps?q=Cafe+Bar+Adam+and+Eve+石垣&output=embed"
 width="100%"
 height="320"
 style="border:0;"
