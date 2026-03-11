@@ -1,65 +1,88 @@
-<title>Cafe&Bar Adam and Eve | Ishigaki Island Bar</title>
-<meta name="description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。カクテル・泡盛・ウイスキーを楽しめる落ち着いたバー。">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
 
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Cafe&Bar Adam and Eve | Ishigaki Island Bar</title>
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cafe&Bar Adam and Eve | Ishigaki Island Bar">
+<meta name="twitter:description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。">
+<meta name="twitter:image" content="https://adamandeveishigaki-site.netlify.app/bar.jpg">
+
 <meta name="description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。カクテル・泡盛・ウイスキーを楽しめる落ち着いたバー。">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="google-site-verification" content="0Zasl1LwpoRk5oHUiUEmBTQ4YVHJ3ZDRlKKCiWNmCMc" />
+<meta property="og:title" content="Cafe&Bar Adam and Eve | Ishigaki Island Bar">
+<meta property="og:description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。落ち着いた空間でカクテルや泡盛を楽しめます。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adamandeveishigaki-site.netlify.app">
+<meta property="og:image" content="https://adamandeveishigaki-site.netlify.app/bar.jpg">
+
+<link rel="canonical" href="https://adamandeveishigaki-site.netlify.app">
+
+<meta name="robots" content="index, follow">
+
+<meta name="google-site-verification" content="0Zasl1LwpoRk5oHUiUEmBTQ4YVHJ3ZDRlKKCiWNmCMc">
+
+<link rel="icon" href="favicon.ico">
+<link rel="preload" as="image" href="./bar.jpg" type="image/jpeg">
 
 <style>
 
+/* ===== 基本 ===== */
+
 body{
 margin:0;
-background:#0f1412;
+background:#0e1110;
 color:#eee;
-font-family:Arial,Helvetica,sans-serif;
-line-height:1.8;
+font-family:"Georgia","Times New Roman",serif;
+line-height:1.9;
+letter-spacing:0.05em;
 }
 
-/* ナビ /
+img{
+max-width:100%;
+height:auto;
+}
+
+/* ===== ナビ ===== */
 
 header{
 position:fixed;
 top:0;
 width:100%;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(10px);
 padding:20px;
-text-align:center;
-background:rgba(0,0,0,0.6);
-z-index:10;
+z-index:100;
 }
 
 header nav{
 display:flex;
 justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+gap:40px;
 }
 
 header a{
-color:white;
+color:#ddd;
 text-decoration:none;
-font-size:15px;
+font-size:13px;
+letter-spacing:1px;
 }
 
-/ TOP /
+/* ===== HERO ===== */
 
 .hero{
 height:100vh;
+padding-top:60px;
 
 background:
-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
-url("bar.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
+url("./bar.jpg") center/cover no-repeat;
 
 display:flex;
 flex-direction:column;
@@ -69,84 +92,139 @@ text-align:center;
 }
 
 .hero h1{
-font-size:60px;
-letter-spacing:8px;
+font-size:72px;
+letter-spacing:12px;
 font-weight:200;
 margin:0;
+text-shadow:0 4px 20px rgba(0,0,0,0.8);
 }
 
 .hero p{
-font-size:16px;
-letter-spacing:2px;
+margin-top:20px;
+color:#cfcfcf;
+letter-spacing:4px;
 }
 
-/ セクション /
+/* ===== セクション ===== */
 
 section{
 max-width:900px;
 margin:auto;
-padding:120px 20px;
+padding:160px 24px;
+scroll-margin-top:100px;
 }
 
 h2{
+font-weight:300;
+letter-spacing:5px;
 color:#d6b15f;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
-/ カード /
+h2:after{
+content:"";
+display:block;
+width:60px;
+height:1px;
+background:#d6b15f;
+margin-top:14px;
+}
 
 .card{
-background:#18201c;
-padding:30px;
-border-radius:5px;
+background:#171b19;
+padding:45px;
+border-radius:6px;
 }
 
-/ ギャラリー /
+/* ===== ギャラリー ===== */
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
 
 .gallery img{
 width:100%;
-border-radius:5px;
+border-radius:6px;
+transition:0.4s;
+filter:brightness(0.9);
 }
 
-/ フッター /
+.gallery img:hover{
+transform:scale(1.05);
+filter:brightness(1);
+}
+
+/* ===== Contactリンク ===== */
+
+.card a{
+color:#d6b15f;
+text-decoration:none;
+}
+
+.card a:hover{
+text-decoration:underline;
+}
+
+/* ===== フッター ===== */
 
 footer{
 background:black;
 text-align:center;
-padding:40px;
+padding:60px;
+font-size:13px;
+color:#aaa;
 }
 
-/ モバイル */
+/* ===== モバイル ===== */
 
 @media (max-width:768px){
 
 .hero h1{
-font-size:38px;
-letter-spacing:4px;
+font-size:42px;
+letter-spacing:6px;
 }
 
 .hero p{
 font-size:14px;
 }
 
-section{
-padding:80px 20px;
-}
-
 header nav{
 flex-direction:column;
-gap:10px;
+gap:12px;
+}
+
+section{
+padding:110px 20px;
 }
 
 }
 
 </style>
+
+<!-- ===== SEO構造化データ ===== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Cafe&Bar Adam and Eve",
+  "image": "https://adamandeveishigaki-site.netlify.app/bar.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "907-0013",
+    "addressRegion": "沖縄県",
+    "addressLocality": "石垣市",
+    "streetAddress": "浜崎町2丁目2-14 浅野アパート102号",
+    "addressCountry": "JP"
+  },
+  "servesCuisine": "Bar",
+  "telephone": "+81980875504",
+  "url": "https://adamandeveishigaki-site.netlify.app",
+  "openingHours": "Mo-Su 17:00-00:00"
+}
+</script>
 
 </head>
 
@@ -157,53 +235,41 @@ gap:10px;
 <nav>
 <a href="#concept">Concept</a>
 <a href="#gallery">Gallery</a>
+<a href="#drinks">Drinks</a>
 <a href="#access">Access</a>
-<a href="#sns">Instagram</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<!-- TOP -->
 
 <div class="hero">
 
-<h1>Adam and Eve</h1>
+<h1>Adam and<br>Eve</h1>
 
 <p>A Quiet Night in Ishigaki</p>
 
 </div>
 
-<!-- CONCEPT -->
 
 <section id="concept">
 
 <h2>Concept</h2>
 
-<p>
-
-石垣島浜崎町にある小さな隠れ家バー。  
-カウンターでカクテルを楽しみながら  
-ゆっくりと時間が流れる場所です。
-
-</p>
-
 <div class="card">
 
 <p>
+石垣島浜崎町にある小さな隠れ家バー。  
+旅の途中でも、地元の方でも。  
 
-一人で静かに飲みたい夜。  
-旅の終わりにふらっと立ち寄る一杯。
-
-Cafe&Bar Adam and Eveは  
-そんな時間のためのバーです。
-
+カウンターでゆっくりと  
+夜の時間をお楽しみください。
 </p>
 
 </div>
 
 </section>
 
-<!-- GALLERY -->
 
 <section id="gallery">
 
@@ -211,77 +277,95 @@ Cafe&Bar Adam and Eveは
 
 <div class="gallery">
 
-<img src="counter.jpg">
-<img src="cocktail.jpg">
-<img src="bar.jpg">
-<img src="inside.jpg">
+<img src="counter.jpg" alt="Cafe&Bar Adam and Eve カウンター席" loading="lazy">
+<img src="cocktail.jpg" alt="Cafe&Bar Adam and Eve カクテル" loading="lazy">
+<img src="bar.jpg" alt="Cafe&Bar Adam and Eve 店内" loading="lazy">
+<img src="inside.jpg" alt="Cafe&Bar Adam and Eve 内装" loading="lazy">
 
 </div>
 
 </section>
 
-<!-- ACCESS -->
+
+<section id="drinks">
+
+<h2>Drinks</h2>
+
+<div class="card">
+
+<p>
+泡盛・ウイスキー・ビール・カクテルなど  
+各種ドリンクをご用意しています。
+</p>
+
+<p>
+おすすめは、  
+石垣島の素材を使ったカクテルや  
+南国らしいトロピカルなカクテル。
+</p>
+
+</div>
+
+</section>
+
 
 <section id="access">
 
 <h2>Access</h2>
 
 <p>
-
-〒907-0013  
 沖縄県石垣市浜崎町2丁目2-14  
 浅野アパート102号
-
 </p>
 
 <p>
-
-石垣港離島ターミナルから徒歩10分  
-Open 17:00 – 24:00  
-Closed Tuesday
-
+石垣港離島ターミナル 徒歩10分  
+Open 17:00 – 0:00
 </p>
 
 <iframe
-src="https://www.google.com/maps?q=沖縄県石垣市浜崎町2丁目2-14&output=embed"
+src="https://www.google.com/maps?q=907-0013+沖縄県石垣市浜崎町2丁目2-14&output=embed"
 width="100%"
 height="320"
-style="border:0;">
+style="border:0;"
+loading="lazy">
 </iframe>
 
 </section>
 
-<!-- INSTAGRAM -->
 
-<section id="sns">
+<section id="contact">
 
-<h2>Instagram</h2>
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+ご予約・お問い合わせは  
+InstagramのDMよりご連絡ください。
+</p>
+
+<p>
+<a href="tel:+81980875504">TEL 0980-87-5504</a>
+</p>
 
 <p>
 
-<a href="https://www.instagram.com/adam_and_eve_ishigaki/" target="_blank">
-@adam_and_eve_ishigaki
+<a href="https://www.instagram.com/adam_and_eve_ishigaki" target="_blank" rel="noopener">
+Instagram
 </a>
-
 </p>
+
+</div>
 
 </section>
 
+
 <footer>
 
-<p>
-
-Cafe&Bar Adam and Eve  
-Ishigaki Island
-
-</p>
-
-<p>
-
-沖縄県石垣市浜崎町2丁目2-14  
-浅野アパート102号
-
-</p>
+<p>Cafe&Bar Adam and Eve</p>
+<p>沖縄県石垣市浜崎町2丁目2-14 浅野アパート102号</p>
+<p>Ishigaki Island</p>
 
 </footer>
 
