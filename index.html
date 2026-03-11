@@ -2,17 +2,20 @@
 <meta name="description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。カクテル・泡盛・ウイスキーを楽しめる落ち着いたバー。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-google-site-verification: googlee98f00829f697ec1.html
-
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cafe&Bar Adam and Eve | Ishigaki Island</title>
+<title>Cafe&Bar Adam and Eve | Ishigaki Island Bar</title>
+
+<meta name="description" content="石垣島浜崎町の隠れ家バー Cafe&Bar Adam and Eve。カクテル・泡盛・ウイスキーを楽しめる落ち着いたバー。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="google-site-verification" content="ここにGoogleコード">
 
 <style>
 
@@ -20,38 +23,42 @@ body{
 margin:0;
 background:#0f1412;
 color:#eee;
-font-family:"Helvetica Neue",Arial,sans-serif;
-letter-spacing:0.05em;
+font-family:Arial,Helvetica,sans-serif;
 line-height:1.8;
 }
 
-/* ナビ */
+/* ナビ /
 
 header{
 position:fixed;
 top:0;
 width:100%;
-padding:22px;
+padding:20px;
 text-align:center;
-background:rgba(0,0,0,0.35);
-backdrop-filter:blur(10px);
-z-index:100;
+background:rgba(0,0,0,0.6);
+z-index:10;
+}
+
+header nav{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 header a{
-margin:0 18px;
-font-size:13px;
-letter-spacing:1px;
-color:#ddd;
+color:white;
 text-decoration:none;
+font-size:15px;
 }
 
-/* トップ */
+/ TOP /
 
 .hero{
 height:100vh;
+
 background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
 url("bar.jpg") center/cover no-repeat;
 
 display:flex;
@@ -62,115 +69,81 @@ text-align:center;
 }
 
 .hero h1{
-font-size:64px;
-letter-spacing:10px;
+font-size:60px;
+letter-spacing:8px;
 font-weight:200;
+margin:0;
 }
 
 .hero p{
-margin-top:15px;
-font-size:14px;
-letter-spacing:4px;
-color:#cfcfcf;
+font-size:16px;
+letter-spacing:2px;
 }
 
-/* パララックス */
-
-.parallax{
-height:60vh;
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
-url("cocktail.jpg") center/cover fixed;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.parallax h2{
-color:white;
-font-size:36px;
-letter-spacing:6px;
-font-weight:200;
-}
-
-/* セクション */
+/ セクション /
 
 section{
-max-width:950px;
+max-width:900px;
 margin:auto;
-padding:140px 24px;
+padding:120px 20px;
 }
-
-/* 見出し */
 
 h2{
-font-weight:300;
-letter-spacing:4px;
 color:#d6b15f;
-margin-bottom:40px;
-position:relative;
+margin-bottom:30px;
 }
 
-h2:after{
-content:"";
-display:block;
-width:60px;
-height:1px;
-background:#d6b15f;
-margin-top:12px;
-}
-
-/* カード */
+/ カード /
 
 .card{
 background:#18201c;
-padding:40px;
-border-radius:6px;
+padding:30px;
+border-radius:5px;
 }
 
-/* ギャラリー */
+/ ギャラリー /
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:18px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
 }
 
 .gallery img{
 width:100%;
-border-radius:6px;
-transition:0.5s;
-filter:brightness(0.85);
+border-radius:5px;
 }
 
-.gallery img:hover{
-transform:scale(1.06);
-filter:brightness(1);
-}
-
-/* フッター */
+/ フッター /
 
 footer{
 background:black;
 text-align:center;
-padding:50px;
-font-size:13px;
-color:#aaa;
+padding:40px;
 }
 
-/* フェード */
+/ モバイル */
 
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1.2s;
+@media (max-width:768px){
+
+.hero h1{
+font-size:38px;
+letter-spacing:4px;
 }
 
-.fade.show{
-opacity:1;
-transform:translateY(0);
+.hero p{
+font-size:14px;
+}
+
+section{
+padding:80px 20px;
+}
+
+header nav{
+flex-direction:column;
+gap:10px;
+}
+
 }
 
 </style>
@@ -181,34 +154,36 @@ transform:translateY(0);
 
 <header>
 
+<nav>
 <a href="#concept">Concept</a>
 <a href="#gallery">Gallery</a>
 <a href="#access">Access</a>
 <a href="#sns">Instagram</a>
+</nav>
 
 </header>
+
+<!-- TOP -->
 
 <div class="hero">
 
 <h1>Adam and Eve</h1>
+
 <p>A Quiet Night in Ishigaki</p>
 
 </div>
 
-<div class="parallax">
+<!-- CONCEPT -->
 
-<h2>The Night Begins</h2>
-
-</div>
-
-<section id="concept" class="fade">
+<section id="concept">
 
 <h2>Concept</h2>
 
 <p>
 
-喧騒から少し離れた場所で、  
-静かにグラスを傾ける夜。
+石垣島浜崎町にある小さな隠れ家バー。  
+カウンターでカクテルを楽しみながら  
+ゆっくりと時間が流れる場所です。
 
 </p>
 
@@ -216,13 +191,11 @@ transform:translateY(0);
 
 <p>
 
-Cafe&Bar Adam and Eveは  
-石垣島浜崎町にある小さな隠れ家バー。
-
 一人で静かに飲みたい夜。  
 旅の終わりにふらっと立ち寄る一杯。
 
-ゆっくりと時間が流れる場所です。
+Cafe&Bar Adam and Eveは  
+そんな時間のためのバーです。
 
 </p>
 
@@ -230,7 +203,9 @@ Cafe&Bar Adam and Eveは
 
 </section>
 
-<section id="gallery" class="fade">
+<!-- GALLERY -->
+
+<section id="gallery">
 
 <h2>Gallery</h2>
 
@@ -245,7 +220,9 @@ Cafe&Bar Adam and Eveは
 
 </section>
 
-<section id="access" class="fade">
+<!-- ACCESS -->
+
+<section id="access">
 
 <h2>Access</h2>
 
@@ -266,7 +243,7 @@ Closed Tuesday
 </p>
 
 <iframe
-src="https://www.google.com/maps?q=沖縄県石垣市浜崎町2丁目2-14 浅野アパート102号&output=embed"
+src="https://www.google.com/maps?q=沖縄県石垣市浜崎町2丁目2-14&output=embed"
 width="100%"
 height="320"
 style="border:0;">
@@ -274,15 +251,11 @@ style="border:0;">
 
 </section>
 
-<section id="sns" class="fade">
+<!-- INSTAGRAM -->
+
+<section id="sns">
 
 <h2>Instagram</h2>
-
-<p>
-
-店内の雰囲気やカクテルはInstagramで紹介しています。
-
-</p>
 
 <p>
 
@@ -311,26 +284,6 @@ Ishigaki Island
 </p>
 
 </footer>
-
-<script>
-
-const fade = document.querySelectorAll(".fade");
-
-const observer = new IntersectionObserver(entries => {
-
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-
-});
-
-});
-
-fade.forEach(el => observer.observe(el));
-
-</script>
 
 </body>
 </html>
