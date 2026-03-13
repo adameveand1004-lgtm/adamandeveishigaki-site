@@ -28,7 +28,9 @@
 
 <style>
 
-html{scroll-behavior:smooth;}
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -278,9 +280,42 @@ display:none;
 z-index:200;
 }
 
+/* mobile */
+
 @media(max-width:800px){
 
-.hero h1{font-size:34px;}
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.logo-text{
+font-size:14px;
+text-align:center;
+}
+
+.nav div{
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+}
+
+.nav div a:not(:last-child)::before{
+display:none;
+}
+
+.hero-logo{
+width:160px;
+}
+
+.hero h1{
+font-size:30px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:14px;
+}
 
 .split{
 grid-template-columns:1fr;
@@ -295,6 +330,7 @@ height:50vh;
 }
 
 </style>
+
 </head>
 
 <body>

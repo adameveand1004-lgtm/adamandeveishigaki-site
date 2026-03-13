@@ -27,7 +27,9 @@
 
 <style>
 
-html{scroll-behavior:smooth;}
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -277,9 +279,42 @@ display:none;
 z-index:200;
 }
 
+/* モバイル */
+
 @media(max-width:800px){
 
-.hero h1{font-size:34px;}
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.logo-text{
+font-size:14px;
+text-align:center;
+}
+
+.nav div{
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+}
+
+.nav div a:not(:last-child)::before{
+display:none;
+}
+
+.hero-logo{
+width:160px;
+}
+
+.hero h1{
+font-size:30px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:14px;
+}
 
 .split{
 grid-template-columns:1fr;
@@ -505,7 +540,6 @@ loading.style.display="none";
 
 });
 
-
 const slides=document.querySelectorAll(".gallery-track img");
 
 let currentSlide=0;
@@ -526,8 +560,6 @@ slides[currentSlide].classList.add("active");
 
 setInterval(autoFade,4000);
 
-
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 anchor.addEventListener("click",function(e){
@@ -542,7 +574,6 @@ behavior:"smooth"
 
 });
 
-
 document.getElementById("logoTop").addEventListener("click",function(e){
 
 e.preventDefault();
@@ -553,7 +584,6 @@ behavior:"smooth"
 });
 
 });
-
 
 const topBtn=document.getElementById("topBtn");
 
@@ -566,7 +596,6 @@ topBtn.style.display="none";
 }
 
 });
-
 
 topBtn.addEventListener("click",function(){
 
