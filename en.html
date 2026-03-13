@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ishigaki Bar | Cafe&Bar Adam and Eve</title>
+
+<meta name="description" content="Cafe&Bar Adam and Eve in Hamazaki, Ishigaki Island. A cozy cocktail bar serving tropical lemon sours, awamori, whisky, and cocktails.">
+
+<link rel="canonical" href="https://adamandeve-ishigaki.com/en.html">
+<link rel="alternate" hreflang="ja" href="https://adamandeve-ishigaki.com/">
+<link rel="alternate" hreflang="en" href="https://adamandeve-ishigaki.com/en.html">
+
+<meta property="og:title" content="Ishigaki Bar | Cafe&Bar Adam and Eve">
+<meta property="og:description" content="A hidden cocktail bar in Ishigaki Island serving cocktails, whisky and awamori.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adamandeve-ishigaki.com/en.html">
+<meta property="og:image" content="https://adamandeve-ishigaki.com/images/ishigaki-bar-counter.jpg">
+<meta property="og:site_name" content="Cafe&Bar Adam and Eve">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="images/favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+html{scroll-behavior:smooth;}
+body{margin:0;background:#0b0b0b;color:#eaeaea;font-family:"Noto Serif JP",serif;line-height:1.9;}
+
+#loading{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+transition:opacity 1s;
+}
+
+#loading img{
+width:140px;
+opacity:0;
+animation:logoFade 2s forwards;
+}
+
+@keyframes logoFade{
+0%{opacity:0;transform:scale(.8);}
+100%{opacity:1;transform:scale(1);}
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+.nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+gap:20px;
+}
+
+.logo-text{
+font-family:"Playfair Display",serif;
+font-size:16px;
+letter-spacing:2px;
+color:#eaeaea;
+text-decoration:none;
+}
+
+.logo-text:hover{color:#c8a85a;}
+
+.nav div{
+display:flex;
+align-items:center;
+gap:28px;
+}
+
+.nav a{
+font-size:12px;
+letter-spacing:2px;
+position:relative;
+padding-bottom:4px;
+font-family:"Playfair Display",serif;
+color:#ddd;
+text-decoration:none;
+}
+
+.nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:1px;
+background:#c8a85a;
+transition:0.35s;
+}
+
+.nav a:hover::after{width:100%;}
+
+.nav div a:not(:last-child)::before{
+content:"|";
+color:#c8a85a;
+margin-right:24px;
+opacity:0.5;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.75) contrast(1.05);
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+opacity:0;
+transform:translateY(30px);
+animation:heroFade 1.6s forwards;
+animation-delay:2.2s;
+}
+
+@keyframes heroFade{
+to{opacity:1;transform:translateY(0);}
+}
+
+.hero-logo{width:220px;margin-bottom:20px;}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:56px;
+letter-spacing:6px;
+margin:0;
+}
+
+.hero p{
+font-family:"Playfair Display",serif;
+margin-top:18px;
+color:#c8a85a;
+letter-spacing:4px;
+font-size:18px;
+font-style:italic;
+opacity:0.9;
+}
+
+.scroll{
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+font-size:12px;
+letter-spacing:3px;
+color:#c8a85a;
+animation:scrollBlink 2s infinite;
+}
+
+@keyframes scrollBlink{
+0%{opacity:0}
+50%{opacity:1}
+100%{opacity:0}
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:180px 30px;
+}
+
+h2{
+font-family:"Playfair Display",serif;
+font-size:34px;
+letter-spacing:4px;
+color:#c8a85a;
+margin-bottom:60px;
+}
+
+.full-image img{
+width:100%;
+height:70vh;
+object-fit:cover;
+display:block;
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+align-items:center;
+}
+
+.split img{
+width:100%;
+max-width:420px;
+border-radius:8px;
+box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.button{
+display:inline-block;
+margin-top:40px;
+padding:14px 40px;
+border:1px solid #c8a85a;
+color:#c8a85a;
+text-decoration:none;
+letter-spacing:2px;
+font-size:13px;
+}
+
+.button:hover{
+background:#c8a85a;
+color:black;
+}
+
+.gallery{
+overflow:hidden;
+position:relative;
+}
+
+.gallery-track{
+position:relative;
+height:70vh;
+}
+
+.gallery-track img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:70vh;
+object-fit:cover;
+border-radius:6px;
+opacity:0;
+transition:opacity 1.5s ease;
+}
+
+.gallery-track img.active{
+opacity:1;
+}
+
+.fade{
+opacity:0;
+transform:translateY(60px);
+transition:1.2s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.access-info{
+margin-top:10px;
+font-size:14px;
+letter-spacing:1px;
+color:#c8a85a;
+}
+
+.contact-info{
+margin-top:12px;
+font-size:15px;
+letter-spacing:1px;
+}
+
+.contact-info a{
+color:#c8a85a;
+text-decoration:none;
+}
+
+.contact-info a:hover{text-decoration:underline;}
+
+footer{
+text-align:center;
+padding:80px 20px;
+color:#777;
+}
+
+@media(max-width:800px){
+.hero h1{font-size:34px;}
+.split{grid-template-columns:1fr;gap:60px;text-align:center;}
+.gallery-track img{height:50vh;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="loading">
+<img src="images/logo-adam-and-eve-ishigaki.png">
+</div>
+
+<header>
+<div class="nav">
+
+<a href="en.html" class="logo-text" id="logoTop">Cafe&Bar Adam and Eve</a>
+
+<div>
+<a href="#concept">Concept</a>
+<a href="#signature">Signature</a>
+<a href="#gallery">Gallery</a>
+<a href="menu.html">Menu</a>
+<a href="#access">Access</a>
+<a href="#contact">Contact</a>
+<a href="index.html">JP</a>
+</div>
+
+</div>
+</header>
+
+<div class="hero">
+
+<video autoplay muted loop playsinline preload="metadata" poster="images/ishigaki-bar-counter.jpg">
+<source src="video/ishigaki-bar-hero.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay">
+
+<img src="images/logo-adam-and-eve-ishigaki.png" class="hero-logo">
+
+<h1>Cafe&Bar Adam and Eve</h1>
+
+<p>Hidden Bar in Ishigaki Island</p>
+
+</div>
+
+<div class="scroll">SCROLL</div>
+</div>
+
+<section id="concept" class="fade">
+<h2>Concept</h2>
+<p>
+Cafe&Bar Adam and Eve is a small cocktail bar located in Hamazaki, Ishigaki Island.
+Enjoy cocktails, whisky, awamori and Japanese sake in a calm counter-style space.
+A cozy place where travelers and solo guests can feel comfortable.
+</p>
+</section>
+
+<div class="full-image">
+<img src="images/ishigaki-bar-counter.jpg">
+</div>
+
+<section id="signature" class="fade">
+
+<div class="split">
+
+<img src="images/nangoku-lemon-sour.jpg">
+
+<div>
+
+<h2>Signature</h2>
+
+<p>
+Tropical Lemon Sour.
+A refreshing drink perfect for the night in Ishigaki.
+</p>
+
+<a href="menu.html" class="button">MENU</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="fade">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+<div class="gallery-track">
+
+<img src="images/ishigaki-bar-interior.jpg" class="active">
+<img src="images/ishigaki-bar-counter.jpg">
+<img src="images/ishigaki-bar-cocktail.jpg">
+
+</div>
+</div>
+
+</section>
+
+<section class="fade">
+<h2>Instagram</h2>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-467669cb-d7a3-4837-a8e9-847921a9a574" data-elfsight-app-lazy></div>
+
+</section>
+
+<section class="fade">
+<h2>Google Reviews</h2>
+
+<div class="elfsight-app-aaa348bd-7d55-4636-bf69-ffa9d2b3d018"></div>
+
+</section>
+
+<section id="access" class="fade">
+
+<h2>Access</h2>
+
+<p>
+2-2-14 Hamazaki, Ishigaki City<br>
+Okinawa 907-0013 Japan
+</p>
+
+<p class="access-info">
+10 min walk from Ishigaki Port Ferry Terminal / Open 17:00 – 0:00
+</p>
+
+</section>
+
+<section id="contact" class="fade">
+
+<h2>Contact</h2>
+
+<p>
+For reservations or inquiries, please contact us by phone or Instagram DM.
+</p>
+
+<p class="contact-info">
+TEL  
+<a href="tel:0980875504">0980-87-5504</a>
+</p>
+
+<p class="contact-info">
+Instagram  
+<a href="https://www.instagram.com/adam_and_eve_ishigaki" target="_blank">@adam_and_eve_ishigaki</a>
+</p>
+
+</section>
+
+<footer>
+<p>Cafe&Bar Adam and Eve</p>
+</footer>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".fade").forEach(el=>{
+
+const rect=el.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 100){
+el.classList.add("show");
+}
+
+});
+
+});
+
+window.addEventListener("load",function(){
+
+const loading=document.getElementById("loading");
+
+setTimeout(()=>{
+loading.style.opacity="0";
+
+setTimeout(()=>{
+loading.style.display="none";
+},1000);
+
+},2000);
+
+});
+
+const slides=document.querySelectorAll(".gallery-track img");
+
+let currentSlide=0;
+
+function autoFade(){
+
+slides[currentSlide].classList.remove("active");
+
+currentSlide++;
+
+if(currentSlide>=slides.length){
+currentSlide=0;
+}
+
+slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(autoFade,4000);
+
+document.getElementById("logoTop").addEventListener("click",function(e){
+e.preventDefault();
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+});
+
+</script>
+
+</body>
+</html>
