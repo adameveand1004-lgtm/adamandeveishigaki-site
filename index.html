@@ -9,35 +9,75 @@
 
 <meta name="description" content="石垣島浜崎町のバー Cafe&Bar Adam and Eve。南国レモンサワー、カクテル、泡盛、ウイスキーを楽しめる隠れ家バー。">
 
-<meta name="google-site-verification" content="oLZa1J9teFSlxFkgnEvJtgZFhkZ7CFgrs13e1dBPXX8" />
+<meta name="google-site-verification" content="oLZa1J9teFSlxFkgnEvJtgZFhkZ7CFgrs13e1dBPXX8">
 
 <link rel="canonical" href="https://adamandeve-ishigaki.com/">
-<link rel="alternate" hreflang="ja" href="https://adamandeve-ishigaki.com/">
-<link rel="alternate" hreflang="en" href="https://adamandeve-ishigaki.com/en.html">
 
 <meta property="og:title" content="石垣島 バー | Cafe&Bar Adam and Eve">
 <meta property="og:description" content="石垣島浜崎町のカクテルバー。南国レモンサワー、泡盛、ウイスキーを楽しめる隠れ家バー。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://adamandeve-ishigaki.com/">
-<meta property="og:image" content="https://adamandeve-ishigaki.com/images/ishigaki-bar-counter.jpg">
-<meta property="og:site_name" content="Cafe&Bar Adam and Eve">
+<meta property="og:image" content="https://adamandeve-ishigaki.com/ishigaki-bar-counter.jpg">
 
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="images/favicon.png">
+<link rel="icon" href="favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
 html{scroll-behavior:smooth;}
-body{margin:0;background:#0b0b0b;color:#eaeaea;font-family:"Noto Serif JP",serif;line-height:1.9;}
-#loading{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity 1s;}
-#loading img{width:140px;opacity:0;animation:logoFade 2s forwards;}
-@keyframes logoFade{0%{opacity:0;transform:scale(.8);}100%{opacity:1;transform:scale(1);}}
-header{position:fixed;top:0;width:100%;background:rgba(0,0,0,0.7);backdrop-filter:blur(10px);z-index:100;}
-.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:20px 30px;gap:20px;}
-.nav a{color:#ddd;text-decoration:none;font-size:13px;letter-spacing:1px;}
-.nav a:hover{color:#c8a85a;}
+
+body{
+margin:0;
+background:#0b0b0b;
+color:#eaeaea;
+font-family:"Noto Serif JP",serif;
+line-height:1.9;
+}
+
+#loading{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+transition:opacity 1s;
+}
+
+#loading img{
+width:140px;
+opacity:0;
+animation:logoFade 2s forwards;
+}
+
+@keyframes logoFade{
+0%{opacity:0;transform:scale(.8);}
+100%{opacity:1;transform:scale(1);}
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.8);
+z-index:100;
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+}
 
 .logo-text{
 font-family:"Playfair Display",serif;
@@ -47,79 +87,31 @@ color:#eaeaea;
 text-decoration:none;
 }
 
-.logo-text:hover{
-color:#c8a85a;
-}
-
-.hero{height:100vh;position:relative;overflow:hidden;}
-.hero video{position:absolute;width:100%;height:100%;object-fit:cover;filter:brightness(.75) contrast(1.05);}
-.hero-overlay{position:absolute;width:100%;height:100%;background:rgba(0,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;transform:translateY(30px);animation:heroFade 1.6s forwards;animation-delay:2.2s;}
-@keyframes heroFade{to{opacity:1;transform:translateY(0);}}
-.hero-logo{width:220px;margin-bottom:20px;}
-.hero h1{font-family:"Playfair Display",serif;font-size:56px;letter-spacing:6px;margin:0;}
-
-.hero p{
-font-family:"Playfair Display",serif;
-margin-top:18px;
-color:#c8a85a;
-letter-spacing:4px;
-font-size:18px;
-font-style:italic;
-opacity:0.9;
-}
-
-.scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:3px;color:#c8a85a;animation:scrollBlink 2s infinite;}
-@keyframes scrollBlink{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-section{max-width:1100px;margin:auto;padding:180px 30px;}
-h2{font-family:"Playfair Display",serif;font-size:34px;letter-spacing:4px;color:#c8a85a;margin-bottom:60px;}
-.full-image img{width:100%;height:70vh;object-fit:cover;display:block;}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center;}
-.split img{width:100%;max-width:420px;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.7);}
-.button{display:inline-block;margin-top:40px;padding:14px 40px;border:1px solid #c8a85a;color:#c8a85a;text-decoration:none;letter-spacing:2px;font-size:13px;}
-.button:hover{background:#c8a85a;color:black;}
-
-.gallery{
-overflow:hidden;
-position:relative;
-}
-
-.gallery-track{
-position:relative;
-height:70vh;
-}
-
-.gallery-track img{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:70vh;
-object-fit:cover;
-border-radius:6px;
-opacity:0;
-transition:opacity 1.5s ease;
-}
-
-.gallery-track img.active{
-opacity:1;
-}
-
-.fade{opacity:0;transform:translateY(60px);transition:1.2s;}
-.fade.show{opacity:1;transform:translateY(0);}
-footer{text-align:center;padding:80px 20px;color:#777;}
-
 .nav div{
 display:flex;
 align-items:center;
 gap:28px;
 }
 
+.nav div a:not(:last-child)::before{
+content:"|";
+color:#c8a85a;
+margin-right:24px;
+opacity:0.5;
+}
+
 .nav a{
-font-size:12px;
+color:#ddd;
+text-decoration:none;
+font-family:"Playfair Display",serif;
 letter-spacing:2px;
+font-size:13px;
 position:relative;
 padding-bottom:4px;
-font-family:"Playfair Display",serif;
+}
+
+.nav a:hover{
+color:#c8a85a;
 }
 
 .nav a::after{
@@ -137,24 +129,124 @@ transition:0.35s;
 width:100%;
 }
 
-.nav div a:not(:last-child)::before{
-content:"|";
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.7);
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-logo{
+width:220px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:56px;
+letter-spacing:6px;
+margin:0;
+}
+
+.hero p{
 color:#c8a85a;
-margin-right:24px;
-opacity:0.5;
+letter-spacing:4px;
+font-size:18px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:180px 30px;
+}
+
+h2{
+font-family:"Playfair Display",serif;
+font-size:34px;
+letter-spacing:4px;
+color:#c8a85a;
+margin-bottom:60px;
+}
+
+.full-image img{
+width:100%;
+height:70vh;
+object-fit:cover;
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+align-items:center;
+}
+
+.split img{
+width:100%;
+max-width:420px;
+border-radius:8px;
+}
+
+.gallery-track{
+position:relative;
+height:70vh;
+}
+
+.gallery-track img{
+position:absolute;
+width:100%;
+height:70vh;
+object-fit:cover;
+opacity:0;
+transition:opacity 1.5s;
+}
+
+.gallery-track img.active{
+opacity:1;
+}
+
+.button{
+display:inline-block;
+margin-top:40px;
+padding:14px 40px;
+border:1px solid #c8a85a;
+color:#c8a85a;
+text-decoration:none;
+letter-spacing:2px;
+font-size:13px;
+}
+
+.button:hover{
+background:#c8a85a;
+color:black;
 }
 
 .access-info{
 margin-top:10px;
-font-size:14px;
-letter-spacing:1px;
 color:#c8a85a;
 }
 
 .contact-info{
 margin-top:12px;
-font-size:15px;
-letter-spacing:1px;
 }
 
 .contact-info a{
@@ -162,29 +254,89 @@ color:#c8a85a;
 text-decoration:none;
 }
 
-.contact-info a:hover{
-text-decoration:underline;
+footer{
+text-align:center;
+padding:80px 20px;
+color:#777;
+}
+
+#topBtn{
+position:fixed;
+right:30px;
+bottom:30px;
+background:#c8a85a;
+color:#000;
+padding:12px 16px;
+font-size:12px;
+letter-spacing:2px;
+font-family:"Playfair Display",serif;
+border:none;
+cursor:pointer;
+border-radius:4px;
+display:none;
+z-index:200;
 }
 
 @media(max-width:800px){
+
 .hero h1{font-size:34px;}
-.split{grid-template-columns:1fr;gap:60px;text-align:center;}
-.gallery-track img{height:50vh;}
+
+.split{
+grid-template-columns:1fr;
+gap:60px;
+text-align:center;
 }
+
+.gallery-track img{
+height:50vh;
+}
+
+}
+
 </style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BarOrPub",
+ "name": "Cafe&Bar Adam and Eve",
+ "image": "https://adamandeve-ishigaki.com/ishigaki-bar-counter.jpg",
+ "@id": "https://adamandeve-ishigaki.com/",
+ "url": "https://adamandeve-ishigaki.com/",
+ "telephone": "+81-980-87-5504",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "浜崎町2丁目2-14 浅野アパート102号",
+   "addressLocality": "石垣市",
+   "addressRegion": "沖縄県",
+   "postalCode": "907-0013",
+   "addressCountry": "JP"
+ },
+ "geo": {
+   "@type": "GeoCoordinates",
+   "latitude": 24.340208,
+   "longitude": 124.147716
+ },
+ "servesCuisine": "Cocktails, Whisky, Awamori",
+ "priceRange": "¥¥",
+ "sameAs": [
+   "https://www.instagram.com/adam_and_eve_ishigaki"
+ ]
+}
+</script>
 
 </head>
 
 <body>
 
 <div id="loading">
-<img src="images/logo-adam-and-eve-ishigaki.png" alt="Cafe&Bar Adam and Eve ロゴ">
+<img src="logo-adam-and-eve-ishigaki.png">
 </div>
 
 <header>
 <div class="nav">
 
-<a href="index.html" class="logo-text" id="logoTop">Cafe&Bar Adam and Eve</a>
+<a href="#" class="logo-text" id="logoTop">Cafe&Bar Adam and Eve</a>
 
 <div>
 <a href="#concept">Concept</a>
@@ -201,13 +353,13 @@ text-decoration:underline;
 
 <div class="hero">
 
-<video autoplay muted loop playsinline preload="metadata" poster="images/ishigaki-bar-counter.jpg">
-<source src="video/ishigaki-bar-hero.mp4" type="video/mp4">
+<video autoplay muted loop playsinline poster="ishigaki-bar-counter.jpg">
+<source src="ishigaki-bar-hero.mp4" type="video/mp4">
 </video>
 
 <div class="hero-overlay">
 
-<img src="images/logo-adam-and-eve-ishigaki.png" class="hero-logo">
+<img src="logo-adam-and-eve-ishigaki.png" class="hero-logo">
 
 <h1>Cafe&Bar Adam and Eve</h1>
 
@@ -215,27 +367,29 @@ text-decoration:underline;
 
 </div>
 
-<div class="scroll">SCROLL</div>
 </div>
 
-<section id="concept" class="fade">
+<section id="concept">
+
 <h2>Concept</h2>
+
 <p>
 石垣島浜崎町にある小さなカクテルバー Cafe&Bar Adam and Eve。  
 カクテル、ウイスキー、泡盛、日本酒などを楽しめるバーで、  
 観光の方でも一人でも入りやすいカウンター中心の落ち着いた空間です。
 </p>
+
 </section>
 
 <div class="full-image">
-<img src="images/ishigaki-bar-counter.jpg" loading="lazy">
+<img src="ishigaki-bar-counter.jpg">
 </div>
 
-<section id="signature" class="fade">
+<section id="signature">
 
 <div class="split">
 
-<img src="images/nangoku-lemon-sour.jpg" loading="lazy">
+<img src="nangoku-lemon-sour.jpg">
 
 <div>
 
@@ -254,53 +408,61 @@ text-decoration:underline;
 
 </section>
 
-<section id="gallery" class="fade">
+<section id="gallery">
 
 <h2>Gallery</h2>
 
-<div class="gallery">
 <div class="gallery-track">
 
-<img src="images/ishigaki-bar-interior.jpg" class="active">
-<img src="images/ishigaki-bar-counter.jpg">
-<img src="images/ishigaki-bar-cocktail.jpg">
+<img src="ishigaki-bar-interior.jpg" class="active">
+<img src="ishigaki-bar-counter.jpg">
+<img src="ishigaki-bar-cocktail.jpg">
 
-</div>
 </div>
 
 </section>
 
-<section class="fade">
+<section>
+
 <h2>Instagram</h2>
 
 <script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-467669cb-d7a3-4837-a8e9-847921a9a574" data-elfsight-app-lazy></div>
+<div class="elfsight-app-467669cb-d7a3-4837-a8e9-847921a9a574"></div>
 
 </section>
 
-<section class="fade">
+<section>
+
 <h2>Google Reviews</h2>
+
 <div class="elfsight-app-aaa348bd-7d55-4636-bf69-ffa9d2b3d018"></div>
+
 </section>
 
-<section id="access" class="fade">
+<section id="access">
 
 <h2>Access</h2>
 
 <p>
-〒907-0013  
+〒907-0013<br>
 沖縄県石垣市浜崎町2丁目2-14 浅野アパート102号
 </p>
 
 <p class="access-info">
-石垣港離島ターミナル 徒歩10分　/　Open 17:00 – 0:00
+石垣港離島ターミナル 徒歩10分 / Open 17:00 – 0:00
 </p>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.180381456234!2d124.1477166753976!3d24.340208465877865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3460750e928efe73%3A0xb4ade5453ef2efdf!2zQ2FmZSZCYXIgQWRhbSBhbmQgRXZlKOOCouODgOODoCDjgqLjg7Pjg4kg44Kk44OWKQ!5e0!3m2!1sja!2sjp!4v1773340316523!5m2!1sja!2sjp" width="100%" height="350" style="border:0;" loading="lazy"></iframe>
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.180381456234!2d124.1477166753976!3d24.340208465877865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3460750e928efe73%3A0xb4ade5453ef2efdf!2zQ2FmZSZCYXIgQWRhbSBhbmQgRXZlKOOCouODgOODoCDjgqLjg7Pjg4kg44Kk44OWKQ!5e0!3m2!1sja!2sjp!4v1773340316523!5m2!1sja!2sjp"
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+</iframe>
 
 </section>
 
-<section id="contact" class="fade">
+<section id="contact">
 
 <h2>Contact</h2>
 
@@ -324,23 +486,9 @@ Instagram
 <p>Cafe&Bar Adam and Eve</p>
 </footer>
 
-<script src="https://elfsightcdn.com/platform.js" async></script>
+<button id="topBtn">TOP</button>
 
 <script>
-
-window.addEventListener("scroll",()=>{
-
-document.querySelectorAll(".fade").forEach(el=>{
-
-const rect=el.getBoundingClientRect();
-
-if(rect.top < window.innerHeight - 100){
-el.classList.add("show");
-}
-
-});
-
-});
 
 window.addEventListener("load",function(){
 
@@ -356,6 +504,7 @@ loading.style.display="none";
 },2000);
 
 });
+
 
 const slides=document.querySelectorAll(".gallery-track img");
 
@@ -377,12 +526,55 @@ slides[currentSlide].classList.add("active");
 
 setInterval(autoFade,4000);
 
-document.getElementById("logoTop").addEventListener("click",function(e){
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
 e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
+});
+
+
+document.getElementById("logoTop").addEventListener("click",function(e){
+
+e.preventDefault();
+
 window.scrollTo({
 top:0,
 behavior:"smooth"
 });
+
+});
+
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",function(){
+
+if(window.scrollY>400){
+topBtn.style.display="block";
+}else{
+topBtn.style.display="none";
+}
+
+});
+
+
+topBtn.addEventListener("click",function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
 });
 
 </script>
